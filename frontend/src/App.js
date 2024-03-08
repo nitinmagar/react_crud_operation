@@ -13,22 +13,22 @@ import StudentList from './components/StudentList'
 
 function App() {
 
-  // ulStyle={
 
-  // };
 
  const liStyle={
-    display: 'inline-block', padding: '9px'
+    display: 'inline-block', 
+    padding: '9px'
+    
 
   }
-
+  
 
 
   return (
 
   
     <Router>
-      
+      <div className='navbar'>
         <ul>
           <li style={liStyle}> 
             <Link to="/AddStudent">Add Students</Link>
@@ -39,6 +39,7 @@ function App() {
 
 
         </ul>
+        </div>
 
       
       <Routes>
