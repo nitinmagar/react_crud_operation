@@ -14,8 +14,22 @@ const createStudent = (req, res) => {
       res.status(500).json({ error: 'Error saving data to the database.' });
     });
 };
-      
+   
+
+//get student list
+const getAllStudents = (req, res) => {
+  Student.find({})
+    .then((students) => {
+      res.json(students);
+    })
+    .catch((err) => {
+      console.error('Error fetching data:', err);
+      res.status(500).json({ error: 'Error fetching data from the database.' });
+    });
+};
+
 
  module.exports = {
-    createStudent
+    createStudent,
+    getAllStudents,
  }

@@ -55,7 +55,7 @@ class AddStudent extends Component {
     state = {
         name: '',
         age: '',
-        className: '',
+        class: '',
         address: ''
     };
 
@@ -83,7 +83,7 @@ class AddStudent extends Component {
             this.setState({
                 name: '',
                 age: '',
-                className: '',
+                class: '',
                 address: ''
             });
         })
@@ -123,8 +123,8 @@ class AddStudent extends Component {
                     <input 
                         style={this.inputStyle}
                         type="text" 
-                        name="className" 
-                        value={this.state.className} 
+                        name="class" 
+                        value={this.state.class} 
                         onChange={this.handleChange} 
                     />
                 </div>
