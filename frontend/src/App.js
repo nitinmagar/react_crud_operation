@@ -17,12 +17,12 @@ function App() {
 
  const liStyle={
     display: 'inline-block', 
-    padding: '9px'
+    padding: '9px',
+    
     
 
   }
   
-
 
   return (
 
@@ -31,15 +31,15 @@ function App() {
       <div className='navbar'>
         <ul>
           <li style={liStyle}> 
-            <Link to="/AddStudent">Add Students</Link>
+            <Link to="/AddStudent" style={{color:'white'}}>Add Students</Link>
           </li>
           <li style={liStyle}>
-            <Link to="/StudentList">View Students</Link>
+            <Link to="/StudentList" style={{color:'white'}} >View Students</Link>
           </li>
 
 
         </ul>
-        </div>
+        </div><br></br>
 
       
       <Routes>
